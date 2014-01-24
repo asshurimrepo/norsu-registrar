@@ -1,0 +1,1010 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"VIew",
+				"View-make	View-make"
+			],
+			[
+				"Sess",
+				"Session-forget	Session-forget"
+			],
+			[
+				"Redirect",
+				"Redirect-back	Redirect-back"
+			],
+			[
+				"Session",
+				"Session-put	Session-put"
+			],
+			[
+				"require",
+				"requirements"
+			],
+			[
+				"getMar",
+				"getMarkDone"
+			],
+			[
+				"doc",
+				"documents"
+			],
+			[
+				"com",
+				"compact"
+			],
+			[
+				"req",
+				"request_id"
+			],
+			[
+				"belon",
+				"belongsToMany"
+			],
+			[
+				"Ha",
+				"Hash-make	Hash-make"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"l",
+				"line-height"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"c",
+				"cellpadding	Attr"
+			],
+			[
+				"cust",
+				"custno"
+			],
+			[
+				"cal",
+				"classification"
+			],
+			[
+				"clas",
+				"classification"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"re",
+				"redirect"
+			],
+			[
+				"cus",
+				"cust"
+			],
+			[
+				"mys",
+				"mysql_error"
+			],
+			[
+				"cu",
+				"cust"
+			],
+			[
+				"ra",
+				"rand"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ce",
+				"cellspacing	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 797,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/AppController.php",
+			"settings":
+			{
+				"buffer_size": 819,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/app/begin.blade.php",
+			"settings":
+			{
+				"buffer_size": 2076,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/Student.php",
+			"settings":
+			{
+				"buffer_size": 267,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/app/findstudent.blade.php",
+			"settings":
+			{
+				"buffer_size": 1284,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/master.blade.php",
+			"settings":
+			{
+				"buffer_size": 2993,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/Document.php",
+			"settings":
+			{
+				"buffer_size": 847,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"view",
+				"Laravel Generate: View"
+			],
+			[
+				"routes",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"contr",
+				"Laravel Generate: Controller"
+			],
+			[
+				"resour",
+				"Laravel Generate: Resource"
+			],
+			[
+				"route",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"set syntax: Bla",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"rou",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"mode",
+				"Laravel Generate: Model"
+			],
+			[
+				"resoure",
+				"Laravel Generate: Resource"
+			],
+			[
+				"cont",
+				"Laravel Generate: Controller"
+			],
+			[
+				"model",
+				"Laravel Generate: Model"
+			],
+			[
+				"request",
+				"Snippet: REQUEST['…']"
+			],
+			[
+				"mod",
+				"Laravel Generate: Model"
+			],
+			[
+				"migrate",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"migra",
+				"Laravel Generate: Migration"
+			],
+			[
+				"mig",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"migr",
+				"Laravel Generate: Migration"
+			],
+			[
+				"migrae",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"miga",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"igra",
+				"Laravel Generate: Migration"
+			],
+			[
+				"seed",
+				"Laravel Artisan: DB:Seed"
+			],
+			[
+				"m",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"migratio",
+				"Laravel Generate: Migration"
+			],
+			[
+				"ke",
+				"Laravel Artisan: Key: Generate"
+			],
+			[
+				"instla",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/e-registrar/composer.json",
+		"/C/xampp/htdocs/e-registrar/app/controllers/ReasonsController.php",
+		"/C/xampp/htdocs/e-registrar/app/views/admin.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/controllers/RequirementsController.php",
+		"/C/xampp/htdocs/e-registrar/app/views/reasons/edit.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/views/reasons/create.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/views/requirements/index.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/views/reasons/index.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/routes.php",
+		"/C/xampp/htdocs/e-registrar/app/views/requirements/create.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/views/requirements/edit.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/controllers/DocumentsController.php",
+		"/C/xampp/htdocs/e-registrar/app/views/admin/index.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/views/documents/create.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/views/documents/index.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/views/documents/edit.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/models/Document.php",
+		"/C/xampp/htdocs/e-registrar/app/controllers/AdminController.php",
+		"/C/xampp/htdocs/e-registrar/app/models/Req.php",
+		"/C/xampp/htdocs/e-registrar/app/views/admin/request.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/models/Student.php",
+		"/C/xampp/htdocs/e-registrar/app/views/master.blade.php",
+		"/C/xampp/htdocs/e-registrar/public/datatables/js/DT_bootstrap.js",
+		"/C/xampp/htdocs/e-registrar/public/bootstrap/css/bootstrap.css",
+		"/C/xampp/htdocs/e-registrar/app/models/Requirement.php",
+		"/C/xampp/htdocs/e-registrar/app/controllers/TestController.php",
+		"/C/xampp/htdocs/e-registrar/app/models/Request.php",
+		"/C/xampp/htdocs/e-registrar/app/views/alert.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/controllers/AuthController.php",
+		"/C/xampp/htdocs/e-registrar/app/views/auth/login.blade.php",
+		"/C/xampp/htdocs/e-registrar/app/models/User.php",
+		"/C/xampp/htdocs/e-registrar/app/filters.php",
+		"/C/xampp/htdocs/e-registrar/app/database/seeds/UsersTableSeeder.php",
+		"/C/xampp/htdocs/e-registrar/app/config/database.php",
+		"/C/xampp/htdocs/e-registrar/app/database/migrations/2013_11_01_220312_create_students_table.php",
+		"/C/xampp/htdocs/e-registrar/app/config/app.php",
+		"/C/xampp/htdocs/waterDistrict/add.php",
+		"/C/xampp/htdocs/waterDistrict/admin.php",
+		"/C/xampp/htdocs/waterDistrict/lala.PHP",
+		"/C/xampp/htdocs/waterDistrict/billing.php",
+		"/C/xampp/htdocs/waterDistrict/search.php",
+		"/C/xampp/htdocs/waterDistrict/index.css",
+		"/C/xampp/htdocs/waterDistrict/hm1.php",
+		"/C/xampp/htdocs/waterDistrict/user.php",
+		"/C/xampp/htdocs/waterDistrict/videochat.php",
+		"/C/xampp/htdocs/waterDistrict/about.php",
+		"/C/xampp/htdocs/waterDistrict/login/admin/index.php",
+		"/C/xampp/htdocs/waterDistrict/includes/config.php",
+		"/C/xampp/htdocs/waterDistrict/login/inc/connection.php",
+		"/C/xampp/htdocs/waterDistrict/config.php",
+		"/C/xampp/htdocs/waterDistrict/edit.php",
+		"/C/xampp/htdocs/waterDistrict/message.php",
+		"/C/xampp/htdocs/waterDistrict/entry.php",
+		"/C/xampp/htdocs/waterDistrict/logout.php",
+		"/C/xampp/htdocs/waterDistrict/home.php",
+		"/C/xampp/htdocs/waterDistrict/includes/top_head.php",
+		"/C/xampp/htdocs/waterDistrict/hm5.php",
+		"/C/xampp/htdocs/waterDistrict/includes/db_func.php",
+		"/C/xampp/htdocs/waterDistrict/check_signin.php",
+		"/C/xampp/htdocs/waterDistrict/login/request.php",
+		"/C/xampp/htdocs/waterDistrict/login/index.php",
+		"/C/xampp/htdocs/waterDistrict/js/calculator.js",
+		"/C/xampp/htdocs/waterDistrict/includes/calculator.php",
+		"/C/xampp/htdocs/waterDistrict/videochat/index.html",
+		"/C/xampp/htdocs/waterDistrict/ajax/ajaxCalculator.php",
+		"/C/xampp/htdocs/waterDistrict/print.php",
+		"/C/xampp/htdocs/waterDistrict/ajax/ajaxCalaculator.php",
+		"/C/xampp/htdocs/waterDistrict/register.php",
+		"/C/xampp/htdocs/waterDistrict/includes/cont.php",
+		"/C/xampp/htdocs/waterDistrict/signin.php",
+		"/C/xampp/htdocs/waterDistrict/videochat/svc/files/crossdomain.xml",
+		"/C/xampp/htdocs/waterDistrict/sign_up.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\waterDistrict"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"requirements",
+			"$res",
+			"requirements",
+			"$req",
+			"documents",
+			"$doc",
+			"<a href=\"entry.php\">Entry</a>",
+			"<a href=\"add.php\">Add</a>",
+			"table",
+			"<td><a href=\"message.php\">Message</a></td>\n        <td><a href=\"entry.php\">Entry</a></td>\n        <td><a href=\"add.php\">Add</a></td>\n        <td><a href=\"search.php\">Search</a></td>",
+			"<td><a href=\"message.php\">Message</a></td>\n            <td><a href=\"entry.php\">Entry</a></td>\n            <td><a href=\"add.php\">Add</a></td>\n<td><a href=\"message.php\">Message</a></td>\n            <td><a href=\"entry.php\">Entry</a></td>\n            <td><a href=\"add.php\">Add</a></td>\n<td><a href=\"message.php\">Message</a></td>\n            <td><a href=\"entry.php\">Entry</a></td>\n            <td><a href=\"add.php\">Add</a></td>\n            <td><a href=\"search.php\">Search</a></td>",
+			"<td><a href=\"message.php\">Message</a></td>\n            <td><a href=\"entry.php\">Entry</a></td>\n            <td><a href=\"add.php\">Add</a></td>\n<td><a href=\"message.php\">Message</a></td>\n            <td><a href=\"entry.php\">Entry</a></td>\n            <td><a href=\"add.php\">Add</a></td>\n            <td><a href=\"search.php\">Search</a></td>",
+			"<td><a href=\"message.php\">Message</a></td>\n        <td><a href=\"entry.php\">Entry</a></td>\n        <td><a href=\"add.php\">Add</a></td>\n        <td><a href=\"search.php\">Search</a></td>",
+			"<td><a href=\"message.php\">Message</a></td>\n<td><a href=\"entry.php\">Entry</a></td>\n<td><a href=\"add.php\">Add</a></td>\n<td><a href=\"search.php\">Search</a></td>",
+			"back",
+			"entry.php",
+			"form",
+			"charge",
+			"charge:",
+			"Update",
+			"add entry",
+			"1",
+			"type",
+			"Classification",
+			"classifcation"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"reasons",
+			"$r",
+			"reasons",
+			"$res",
+			"requirements",
+			"$req",
+			"<a href=\"entry.php\">Bill Entry</a>",
+			"<a href=\"add.php\">Add Customer</a>",
+			"<td><a href=\"add.php\">Add</a></td>\n        <td><a href=\"entry.php\">Entry</a></td>\n   <td><a href=\"message.php\">Message</a></td>\n        <td><a href=\"search.php\">Search</a></td>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/AppController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 819,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								806,
+								806
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/app/begin.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2076,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1955,
+								1955
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/Student.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								260,
+								260
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/app/findstudent.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								909,
+								909
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2993,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1741,
+								1741
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/models/Document.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								262,
+								262
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 426.0
+	},
+	"project": "eregistrar.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"begin",
+				"app\\views\\app\\begin.blade.php"
+			],
+			[
+				"master",
+				"app\\views\\master.blade.php"
+			],
+			[
+				"document",
+				"app\\models\\Document.php"
+			],
+			[
+				"rout",
+				"app\\routes.php"
+			],
+			[
+				"routes",
+				"app\\routes.php"
+			],
+			[
+				"dt_",
+				"public\\datatables\\js\\DT_bootstrap.js"
+			],
+			[
+				"boot",
+				"public\\bootstrap\\css\\bootstrap.css"
+			],
+			[
+				"aler",
+				"app\\views\\alert.blade.php"
+			],
+			[
+				"filte",
+				"app\\filters.php"
+			],
+			[
+				"datab",
+				"app\\config\\database.php"
+			],
+			[
+				"stude",
+				"app\\models\\Student.php"
+			],
+			[
+				"app.",
+				"app\\config\\app.php"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"about",
+				"about.php"
+			],
+			[
+				"vi",
+				"videochat.php"
+			],
+			[
+				"user",
+				"user.php"
+			],
+			[
+				"sea",
+				"search.php"
+			],
+			[
+				"add",
+				"add.php"
+			],
+			[
+				"admin",
+				"admin.php"
+			],
+			[
+				"lal",
+				"lala.PHP"
+			],
+			[
+				"bill",
+				"billing.php"
+			],
+			[
+				"sear",
+				"search.php"
+			],
+			[
+				"inde",
+				"index.css"
+			],
+			[
+				"hm1",
+				"hm1.php"
+			],
+			[
+				".css",
+				"index.css"
+			],
+			[
+				"vide",
+				"videochat.php"
+			],
+			[
+				"en",
+				"entry.php"
+			],
+			[
+				"mes",
+				"message.php"
+			],
+			[
+				"searc",
+				"search.php"
+			],
+			[
+				"confi",
+				"includes\\config.php"
+			],
+			[
+				"config",
+				"config.php"
+			],
+			[
+				"conf",
+				"includes\\config.php"
+			],
+			[
+				"lala",
+				"lala.PHP"
+			],
+			[
+				"hm5",
+				"hm5.php"
+			],
+			[
+				"logou",
+				"logout.php"
+			],
+			[
+				"hom",
+				"home.php"
+			],
+			[
+				"top_",
+				"includes\\top_head.php"
+			],
+			[
+				"login/",
+				"login\\request.php"
+			],
+			[
+				"d_",
+				"includes\\db_func.php"
+			],
+			[
+				"cofig",
+				"includes\\config.php"
+			],
+			[
+				"connec",
+				"login\\inc\\connection.php"
+			],
+			[
+				"check",
+				"check_signin.php"
+			],
+			[
+				"reque",
+				"login\\request.php"
+			],
+			[
+				"ajax",
+				"ajax\\ajaxCalculator.php"
+			],
+			[
+				"videochat",
+				"videochat\\index.html"
+			],
+			[
+				"s",
+				"check_signin.php"
+			],
+			[
+				"print",
+				"print.php"
+			],
+			[
+				"messag",
+				"message.php"
+			],
+			[
+				"edit",
+				"edit.php"
+			],
+			[
+				"ca",
+				"js\\calculator.js"
+			],
+			[
+				"calc",
+				"includes\\calculator.php"
+			],
+			[
+				"db_",
+				"includes\\db_func.php"
+			],
+			[
+				"entry",
+				"entry.php"
+			],
+			[
+				"top",
+				"includes\\top_head.php"
+			],
+			[
+				"dbf",
+				"includes\\db_func.php"
+			],
+			[
+				"ind",
+				"index.css"
+			],
+			[
+				"cal",
+				"includes\\calculator.php"
+			],
+			[
+				"ide",
+				"index.css"
+			],
+			[
+				"aja",
+				"ajax\\ajaxCalculator.php"
+			],
+			[
+				"cacl",
+				"js\\calculator.js"
+			],
+			[
+				"regis",
+				"register.php"
+			],
+			[
+				"sign",
+				"sign_up.php"
+			],
+			[
+				"hm5.",
+				"hm5.php"
+			],
+			[
+				"mess",
+				"message.php"
+			],
+			[
+				"signi",
+				"signin.php"
+			],
+			[
+				"cont",
+				"includes\\cont.php"
+			],
+			[
+				"mea",
+				"message.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

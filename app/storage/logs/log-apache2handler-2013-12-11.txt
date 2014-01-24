@@ -1,0 +1,60 @@
+[2013-12-11 02:55:45] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\e-registrar\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-12-11 03:13:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\e-registrar\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-12-11 03:21:14] log.ERROR: exception 'ErrorException' with message 'Argument 1 passed to Illuminate\Database\Eloquent\Relations\BelongsToMany::sync() must be of the type array, null given, called in C:\xampp\htdocs\e-registrar\app\controllers\DocumentsController.php on line 43 and defined' in C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\BelongsToMany.php:485
+Stack trace:
+#0 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\BelongsToMany.php(485): Illuminate\Exception\Handler->handleError(4096, 'Argument 1 pass...', 'C:\xampp\htdocs...', 485, Array)
+#1 C:\xampp\htdocs\e-registrar\app\controllers\DocumentsController.php(43): Illuminate\Database\Eloquent\Relations\BelongsToMany->sync(NULL)
+#2 [internal function]: DocumentsController->store()
+#3 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#5 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\e-registrar\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-11 03:21:40] log.ERROR: exception 'ErrorException' with message 'Argument 1 passed to Illuminate\Database\Eloquent\Relations\BelongsToMany::sync() must be of the type array, null given, called in C:\xampp\htdocs\e-registrar\app\controllers\DocumentsController.php on line 85 and defined' in C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\BelongsToMany.php:485
+Stack trace:
+#0 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\BelongsToMany.php(485): Illuminate\Exception\Handler->handleError(4096, 'Argument 1 pass...', 'C:\xampp\htdocs...', 485, Array)
+#1 C:\xampp\htdocs\e-registrar\app\controllers\DocumentsController.php(85): Illuminate\Database\Eloquent\Relations\BelongsToMany->sync(NULL)
+#2 [internal function]: DocumentsController->update('11')
+#3 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('update', Array)
+#5 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'update', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('11')
+#7 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\e-registrar\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []

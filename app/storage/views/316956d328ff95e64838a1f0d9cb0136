@@ -1,0 +1,20 @@
+
+<?php $__env->startSection('ht'); ?> 
+	Add New Requirement
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('cnt'); ?>
+
+<?php echo Form::open(['route'=>'requirements.store']); ?>
+  <div class="form-group">
+  	<?php echo Form::label('name', 'Requirement Name'); ?>
+  	<?php echo Form::text('name', Input::old('name'), ['class'=>'form-control']); ?>
+  </div>
+
+
+
+
+  <button type="submit" class="btn btn-default">Submit</button>
+<?php echo Form::close(); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

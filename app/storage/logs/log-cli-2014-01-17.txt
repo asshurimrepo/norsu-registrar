@@ -1,0 +1,8 @@
+[2014-01-17 17:13:53] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'status' (T_STRING)' in C:\xampp\htdocs\e-registrar\app\database\migrations\2014_01_17_171345_create_level_user_table.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-01-17 17:15:14] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'CreateLevelUserTable' not found' in C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php:301
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

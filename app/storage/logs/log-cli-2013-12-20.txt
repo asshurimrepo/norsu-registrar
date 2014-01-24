@@ -1,0 +1,4 @@
+[2013-12-20 10:20:27] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class CreateRequirementsTable' in C:\xampp\htdocs\e-registrar\app\database\migrations\2013_11_15_194543_create_requirements_table.php:33
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

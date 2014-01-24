@@ -1,0 +1,48 @@
+[2013-11-01 22:03:56] log.ERROR: exception 'ErrorException' with message 'Argument 2 passed to Illuminate\Database\Schema\Blueprint::enum() must be of the type array, none given, called in C:\xampp\htdocs\e-registrar\app\database\migrations\2013_11_01_220312_create_students_table.php on line 21 and defined' in C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php:551
+Stack trace:
+#0 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(551): Illuminate\Exception\Handler->handleError(4096, 'Argument 2 pass...', 'C:\xampp\htdocs...', 551, Array)
+#1 C:\xampp\htdocs\e-registrar\app\database\migrations\2013_11_01_220312_create_students_table.php(21): Illuminate\Database\Schema\Blueprint->enum(Array)
+#2 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(91): CreateStudentsTable->{closure}(Object(Illuminate\Database\Schema\Blueprint))
+#3 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(209): Illuminate\Database\Schema\Builder->create('students', Object(Closure))
+#4 C:\xampp\htdocs\e-registrar\app\database\migrations\2013_11_01_220312_create_students_table.php(27): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#5 C:\xampp\htdocs\e-registrar\app\database\migrations\2013_11_01_220312_create_students_table.php(27): Illuminate\Support\Facades\Schema::create('students', Object(Closure))
+#6 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(137): CreateStudentsTable->up()
+#7 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(113): Illuminate\Database\Migrations\Migrator->runUp('2013_11_01_2203...', 1, false)
+#8 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(84): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#9 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(67): Illuminate\Database\Migrations\Migrator->run('C:\xampp\htdocs...', false)
+#10 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#11 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\e-registrar\artisan(59): Symfony\Component\Console\Application->run()
+#17 {main} [] []
+[2013-11-01 22:04:12] log.ERROR: exception 'ErrorException' with message 'Argument 2 passed to Illuminate\Database\Schema\Blueprint::enum() must be of the type array, none given, called in C:\xampp\htdocs\e-registrar\app\database\migrations\2013_11_01_220312_create_students_table.php on line 21 and defined' in C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php:551
+Stack trace:
+#0 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(551): Illuminate\Exception\Handler->handleError(4096, 'Argument 2 pass...', 'C:\xampp\htdocs...', 551, Array)
+#1 C:\xampp\htdocs\e-registrar\app\database\migrations\2013_11_01_220312_create_students_table.php(21): Illuminate\Database\Schema\Blueprint->enum(Array)
+#2 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(91): CreateStudentsTable->{closure}(Object(Illuminate\Database\Schema\Blueprint))
+#3 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(209): Illuminate\Database\Schema\Builder->create('students', Object(Closure))
+#4 C:\xampp\htdocs\e-registrar\app\database\migrations\2013_11_01_220312_create_students_table.php(27): Illuminate\Support\Facades\Facade::__callStatic('create', Array)
+#5 C:\xampp\htdocs\e-registrar\app\database\migrations\2013_11_01_220312_create_students_table.php(27): Illuminate\Support\Facades\Schema::create('students', Object(Closure))
+#6 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(137): CreateStudentsTable->up()
+#7 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(113): Illuminate\Database\Migrations\Migrator->runUp('2013_11_01_2203...', 1, false)
+#8 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(84): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#9 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(67): Illuminate\Database\Migrations\Migrator->run('C:\xampp\htdocs...', false)
+#10 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#11 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\e-registrar\artisan(59): Symfony\Component\Console\Application->run()
+#17 {main} [] []
+[2013-11-01 22:09:20] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '[', expecting ')'' in C:\xampp\htdocs\e-registrar\app\database\seeds\UsersTableSeeder.php:12
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-01 22:12:13] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Routes' not found' in C:\xampp\htdocs\e-registrar\app\routes.php:16
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

@@ -1,0 +1,24 @@
+[2014-01-20 04:11:26] production.ERROR: exception 'RuntimeException' with message 'The "--fields" option does not exist.' in C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:213
+Stack trace:
+#0 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(152): Symfony\Component\Console\Input\ArgvInput->addLongOption('fields', 'name:string')
+#1 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(86): Symfony\Component\Console\Input\ArgvInput->parseLongOption('--fields=name:s...')
+#2 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(61): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(223): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(891): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\e-registrar\artisan(59): Symfony\Component\Console\Application->run()
+#9 {main} [] []
+[2014-01-20 04:12:26] production.ERROR: exception 'RuntimeException' with message 'The "--fields" option does not exist.' in C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:213
+Stack trace:
+#0 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(154): Symfony\Component\Console\Input\ArgvInput->addLongOption('fields', NULL)
+#1 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(86): Symfony\Component\Console\Input\ArgvInput->parseLongOption('--fields')
+#2 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(61): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(223): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 C:\xampp\htdocs\e-registrar\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(891): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Routing\Console\MakeControllerCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\e-registrar\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\e-registrar\artisan(59): Symfony\Component\Console\Application->run()
+#9 {main} [] []

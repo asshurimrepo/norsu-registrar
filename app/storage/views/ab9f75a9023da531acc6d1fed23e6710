@@ -1,0 +1,45 @@
+
+<?php $__env->startSection('ht'); ?> 
+	List of Requirements <span class="badge"><?php echo $reqs->count(); ?></span> 
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('cnt'); ?>
+	
+	<table class="table table-striped table-condensed  datatable">
+			
+			<thead>
+					
+					<tr>
+							
+							<th>Requirement Name</th>
+							<th>Date Added</th>
+							<th>Action</th>
+
+					</tr>	
+
+			</thead>
+
+			<tbody>
+			<?php foreach($reqs as $req): ?>
+				<tr>
+					
+					<td><?php echo $req->name; ?></td>
+					<td><?php echo date('d M Y h:i a', strtotime($req->created_at)); ?></td>
+					<td>
+						<center>
+						<?php echo Form::open(['route'=>['requirements.destroy', $req->id], 'method'=>'delete', 'class'=>'delete']); ?>
+						<a  data-toggle="tooltip" href="<?php echo route('requirements.edit', $req->id); ?>" title="Edit" class="tip"> <i class="glyphicon glyphicon-edit"></i> </a>
+						<button title="Delete" class="tip btn-link"> <i class="glyphicon glyphicon-remove"></i> </button>
+						<?php echo Form::close(); ?>
+						</center>
+
+					</td>
+
+				</tr>
+			<?php endforeach; ?>
+			</tbody>
+
+	</table>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
