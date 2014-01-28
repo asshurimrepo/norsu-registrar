@@ -13,15 +13,20 @@ class Req extends Eloquent {
 
 	public function documents()
 	{
-		return $this->belongsToMany('Document', 'document_request', 'request_id', 'document_id')->withPivot('status')->withTimestamps();
+		return $this->belongsToMany('Document', 'document_request', 'request_id', 'document_id')->withPivot('status', 'level_id')->withTimestamps();
 	}
 
+	public function updatedDocuments()
+	{
+		return $this->documents()->access(Auth::user()->id)->orderBy('document_request.updated_at', 'desc');
+	}
 
 	public function reasons()
 	{
 		return $this->belongsToMany('Reason', 'reason_request', 'request_id', 'reason_id');
 	}
 
+	
 	
 
 	public function status()

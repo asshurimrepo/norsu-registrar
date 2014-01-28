@@ -49,6 +49,11 @@
 		<div class="main-content">
 			 
 			 @include('themes.neon.profile-info')
+
+			 @section('alert')
+			 	@include('alert')
+			 @show
+
 			 @yield('c')
 
 		</div>
@@ -68,6 +73,9 @@
 	{{ HTML::script('neon-x/assets/js/neon-login.js') }}
 	{{ HTML::script('neon-x/assets/js/neon-custom.js') }}
 	{{ HTML::script('neon-x/assets/js/neon-demo.js') }}
+
+
+	@yield('js')
 
 </body>
 </html>

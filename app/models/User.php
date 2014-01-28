@@ -78,7 +78,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	// Get Access Levels..
 	public function getAccessLevelLists()
 	{
-		return $this->accessLevel->lists('id', 'name');
+		return $this->accessLevel->lists('id');
 	}
 
 }

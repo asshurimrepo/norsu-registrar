@@ -5,6 +5,12 @@ class Document extends Eloquent {
 
 	public static $rules = array();
 
+	public function scopeAccess($q, $user_id){
+		$user = User::find($user_id);
+		$access_id = count($user->getAccessLevelLists()) ? $user->getAccessLevelLists() : [0];
+		return $q->whereIn('level_id', $access_id);
+	}
+
 	public function scopeExceptOthers($q)
 	{
 		return $q->where('others', 0);

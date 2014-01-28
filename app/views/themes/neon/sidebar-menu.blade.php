@@ -36,12 +36,12 @@
 				</li>
 
 		<li class="active opened active">
-				<a href="../../../neon-x/dashboard/main/index.html"><i class="entypo-gauge"></i><span>Dashboard</span></a>
+				<a href="{{ url('manage') }}"><i class="entypo-gauge"></i><span>Dashboard</span></a>
 		</li>
 		@foreach(Auth::user()->accessLevel()->orderBy('order','desc')->get() as $access)
 
 		<li>
-			<a href="../../../neon-x/dashboard/main/index.html"><i class="{{ $access->icon }}"></i><span>{{ $access->name }}</span></a>
+			<a href="{{ url('manage/level/'.$access->id) }}"><i class="{{ $access->icon }}"></i><span>{{ $access->name }}</span> <span class="badge badge-secondary">{{ count($access->requests) }}</span></a>
 		</li>
 
 		@endforeach

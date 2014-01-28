@@ -52,7 +52,8 @@
 		
 		</ul>
 		
-		<ul class="user-info pull-left pull-right-xs pull-none-xsm">
+		<?php 
+		/*<ul class="user-info pull-left pull-right-xs pull-none-xsm">
 			
 			
 			<!-- Message Notifications -->
@@ -165,7 +166,8 @@
 				
 			</li>
 		
-		</ul>
+		</ul>*/
+		?>
 	
 	</div>
 	
