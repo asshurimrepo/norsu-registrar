@@ -22,12 +22,12 @@ class ManageController extends BaseController {
 		$nl = Level::where('order', $l->order+1)->first();
 
 		$r->update(['level_id' => $nl->id]);
-		return Redirect::back()->with('suc', 'Request ID #'.$r->id.' has been updated!');
+		return Redirect::to('manage')->with('suc', 'Request ID #'.$r->id.' has been updated!');
 	}
 
 	public function getRequest($id)
 	{
-		$r = RequestItem::with('request.student', 'document.requirements', 'label', 'level')->find($id);
+		$r = RequestItem::with('request.student', 'document.requirements', 'label', 'level', 'taskDone')->find($id);
 		return View::make('manage.request', compact('r'));
 
 	}
@@ -35,9 +35,11 @@ class ManageController extends BaseController {
 
 	public function getLevel($id)
 	{
-		$r = RequestItem::with('request.student', 'document', 'level', 'label')->where('level_id', $id)->updated()->get();
+		$updatedDocs = RequestItem::with('request.student', 'document', 'level', 'label')->where('level_id', $id)->updated()->get();
 		$l = Level::find($id);
-		return View::make('manage.level', compact('r', 'l'));
+        $labels = Label::all();
+
+		return View::make('manage.level', compact('updatedDocs', 'l', 'labels'));
 	}
 	
 }

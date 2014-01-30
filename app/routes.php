@@ -20,6 +20,7 @@ Route::controller('/app', 'AppController');
 Route::group(['before'=>'auth'], function(){
 
 	Route::controller('manage', 'ManageController');
+	Route::controller('task', 'TaskController');
 
 	Route::group(['before'=>'has_fd_access'], function(){
 		Route::resource('frontdesks', 'FrontdesksController');

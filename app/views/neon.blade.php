@@ -82,20 +82,16 @@
 	{{ HTML::script('neon-x/assets/js/rickshaw/vendor/d3.v3.js') }}
 	{{ HTML::script('neon-x/assets/js/rickshaw/rickshaw.min.js') }}
 
+	{{ HTML::script('neon-x/assets/js/raphael-min.js') }}
+	{{ HTML::script('neon-x/assets/js/morris.min.js') }}
+	{{ HTML::script('neon-x/assets/js/toastr.js') }}
+	{{ HTML::script('neon-x/assets/js/neon-chat.js') }}
+
+
 	{{ HTML::script('neon-x/assets/js/jquery.validate.min.js') }}
 	{{ HTML::script('neon-x/assets/js/neon-login.js') }}
 	{{ HTML::script('neon-x/assets/js/neon-custom.js') }}
 	{{ HTML::script('neon-x/assets/js/neon-demo.js') }}
-
-
-
-	<script src="../../../neon-x/assets/js/raphael-min.js" id="script-resource-12"></script>
-	<script src="../../../neon-x/assets/js/morris.min.js" id="script-resource-13"></script>
-	<script src="../../../neon-x/assets/js/toastr.js" id="script-resource-14"></script>
-	<script src="../../../neon-x/assets/js/neon-chat.js" id="script-resource-15"></script>
-	<script src="../../../neon-x/assets/js/neon-custom.js" id="script-resource-16"></script>
-	<script src="../../../neon-x/assets/js/neon-demo.js" id="script-resource-17"></script>
-
 
 	@yield('js')
 

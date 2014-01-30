@@ -5,28 +5,40 @@
 	
 	<script type="text/javascript">
 	// Code used to add Todo Tasks
-	$(document).ready(function($)
-	{	
+	var number_of_requirements = {{ count($r->document->requirements) }};
+
+	jQuery(document).ready(function($)
+	{
 		var $todo_tasks = $("#todo_tasks");
-		
-		$todo_tasks.find('input[type="text"]').on('keydown', function(ev)
-		{
-			if(ev.keyCode == 13)
-			{
-				ev.preventDefault();
-				
-				if($.trim($(this).val()).length)
-				{
-					var $todo_entry = $('<li><div class="checkbox checkbox-replace color-white"><input type="checkbox" /><label>'+$(this).val()+'</label></div></li>');
-					$(this).val('');
-					
-					$todo_entry.appendTo($todo_tasks.find('.todo-list'));
-					$todo_entry.hide().slideDown('fast');
-					replaceCheckboxes();
-				}
-			}
+
+		replaceCheckboxes();
+
+		checkIfReady();
+
+		$('.todo_list').click(function(){
+			var ref_id = $(this).data('id');
+			var status = this.checked;
+			var type = 'r';
+			var document_request_id = {{ $r->id }};
+
+			checkIfReady();
+
+			$.post('{{ url('task/done') }}', {ref_id:ref_id, status:status, type:type, document_request_id: document_request_id});
 		});
+
+	
 	});
+
+
+	function checkIfReady () {
+		var checked = $(".todo_list:checked").length;
+		$(".task-done").html(checked);
+		if(checked == number_of_requirements)
+			$(".btn-proceed").removeClass('disabled');
+		else
+			$(".btn-proceed").addClass('disabled');
+
+	}
 </script>
 
 @stop
@@ -51,57 +63,30 @@
 				<i class="entypo-list"></i>
 				
 				<a href="#">
-					Tasks
-					<span>To do list, tick one.</span>
+					Requirements
+					<span>check list, tick one.</span>
 				</a>
 			</div>
 			
 			<div class="tile-content">
 				
-				<input type="text" class="form-control" placeholder="Add Task">
+				<!-- <input type="text" class="form-control" placeholder="Add Task"> -->
 				
 				
 				<ul class="todo-list">
-					<li>
-						<div class="checkbox checkbox-replace color-white neon-cb-replacement">
-							<label class="cb-wrapper"><input type="checkbox"><div class="checked"></div></label>
-							<label>Website Design</label>
-						</div>
-					</li>
 					
-					<li>
-						<div class="checkbox checkbox-replace color-white neon-cb-replacement checked">
-							<label class="cb-wrapper"><input type="checkbox" id="task-2" checked=""><div class="checked"></div></label>
-							<label>Slicing</label>
-						</div>
-					</li>
-					
-					<li>
-						<div class="checkbox checkbox-replace color-white neon-cb-replacement">
-							<label class="cb-wrapper"><input type="checkbox" id="task-3"><div class="checked"></div></label>
-							<label>WordPress Integration</label>
-						</div>
-					</li>
-					
-					<li>
-						<div class="checkbox checkbox-replace color-white neon-cb-replacement">
-							<label class="cb-wrapper"><input type="checkbox" id="task-4"><div class="checked"></div></label>
-							<label>SEO Optimize</label>
-						</div>
-					</li>
-					
-					<li>
-						<div class="checkbox checkbox-replace color-white neon-cb-replacement checked">
-							<label class="cb-wrapper"><input type="checkbox" id="task-5" checked=""><div class="checked"></div></label>
-							<label>Minify &amp; Compress</label>
-						</div>
-					</li>
+					@foreach($r->document->requirements as $req)
+					<li> <div class="checkbox checkbox-replace color-white"><input type="checkbox" class="todo_list" data-id="{{ $req->id }}" {{ $r->isTaskDone($req->id) ? 'checked' : '' }} /><label>{{ $req->name }}</label></div></li>
+					@endforeach
+
 				</ul>
 				
 			</div>
 			
-			<div class="tile-footer">
-				<a href="#">View all tasks</a>
+			<div class="tile-footer" style="text-align:right;">
+				<a href="{{ url('manage/proceed/'.$r->id) }}" class="btn btn-success btn-proceed disabled ">Proceed To Next 
+								<i class="entypo-right-open"></i>
+				</a>
 			</div>
 			
 		</div>
@@ -114,11 +99,11 @@
 			<div class="col-sm-12">
 	
 		<div class="tile-stats tile-red">
-			<div class="icon"><i class="entypo-users"></i></div>
-			<div class="num" data-start="0" data-end="83" data-postfix="" data-duration="1500" data-delay="0">0</div>
+			<div class="icon"><i class="entypo-check"></i></div>
+			<div class="num task-done" data-start="0" data-end="{{ count($r->taskDone) }}" data-postfix="" data-duration="1500" data-delay="0">0</div>
 			
-			<h3>Registered users</h3>
-			<p>so far in our blog, and our website.</p>
+			<h3>Task Done</h3>
+			<p>out of {{ count($r->document->requirements) }}</p>
 		</div>
 		
 	</div>
