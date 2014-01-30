@@ -49,7 +49,7 @@
 			<table class="table table-bordered table-responsive  table-hover">
 				<thead>
 					<tr>
-						<!-- <th></th> -->
+						<th></th>
 						<th>#</th>
 						<th>Request ID</th>
 						<th>Type of Document</th>
@@ -65,7 +65,7 @@
 
 				@foreach($updatedDocs as $i=>$d)
 					<tr>
-						<!-- <td style="text-align:center; width:133px;"> 
+						<td style="text-align:center; width:133px;"> 
 
 						@if(isset($d->label->name))
 							<span class="badge" style="background:{{ $d->label->color }}; color:#FFF">{{ $d->label->name }}</span> 
@@ -81,7 +81,7 @@
 								</ul>
 
 							</div> 
-						</td> -->
+						</td>
 
 						<td>{{ $i+1 }}</td>
 						<td>{{ $d->id }}</td>
@@ -91,7 +91,7 @@
 						<td>{{ $d->date('updated_at') }}</td>
 						<td class="col-sm-1s">
 
-							<a href="{{ url('manage/proceed/'.$d->id) }}" class="btn btn-success btn-xs btn-icon icon-left">
+							<a href="{{ url('manage/request/'.$d->id) }}" class="btn btn-success btn-xs btn-icon icon-left">
 								<i class="entypo-right-open"></i>
 								Proceed
 	 						</a>

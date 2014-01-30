@@ -25,6 +25,13 @@ class ManageController extends BaseController {
 		return Redirect::back()->with('suc', 'Request ID #'.$r->id.' has been updated!');
 	}
 
+	public function getRequest($id)
+	{
+		$r = RequestItem::with('request.student', 'document.requirements', 'label', 'level')->find($id);
+		return View::make('manage.request', compact('r'));
+
+	}
+
 
 	public function getLevel($id)
 	{

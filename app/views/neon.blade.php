@@ -62,17 +62,39 @@
 	</div>
 
 @show
+	
 
+	{{ HTML::style('neon-x/assets/js/jvectormap/jquery-jvectormap-1.2.2.css') }}
+	{{ HTML::style('neon-x/assets/js/rickshaw/rickshaw.min.css') }}
+
+	
 	{{ HTML::script('neon-x/assets/js/gsap/main-gsap.js') }}
 	{{ HTML::script('neon-x/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js') }}
 	{{ HTML::script('neon-x/assets/js/bootstrap.min.js') }}
 	{{ HTML::script('neon-x/assets/js/joinable.js') }}
 	{{ HTML::script('neon-x/assets/js/resizeable.js') }}
 	{{ HTML::script('neon-x/assets/js/neon-api.js') }}
+
+	{{ HTML::script('neon-x/assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js') }}
+	{{ HTML::script('neon-x/assets/js/jvectormap/jquery-jvectormap-europe-merc-en.js') }}
+
+	{{ HTML::script('neon-x/assets/js/jquery.sparkline.min.js') }}
+	{{ HTML::script('neon-x/assets/js/rickshaw/vendor/d3.v3.js') }}
+	{{ HTML::script('neon-x/assets/js/rickshaw/rickshaw.min.js') }}
+
 	{{ HTML::script('neon-x/assets/js/jquery.validate.min.js') }}
 	{{ HTML::script('neon-x/assets/js/neon-login.js') }}
 	{{ HTML::script('neon-x/assets/js/neon-custom.js') }}
 	{{ HTML::script('neon-x/assets/js/neon-demo.js') }}
+
+
+
+	<script src="../../../neon-x/assets/js/raphael-min.js" id="script-resource-12"></script>
+	<script src="../../../neon-x/assets/js/morris.min.js" id="script-resource-13"></script>
+	<script src="../../../neon-x/assets/js/toastr.js" id="script-resource-14"></script>
+	<script src="../../../neon-x/assets/js/neon-chat.js" id="script-resource-15"></script>
+	<script src="../../../neon-x/assets/js/neon-custom.js" id="script-resource-16"></script>
+	<script src="../../../neon-x/assets/js/neon-demo.js" id="script-resource-17"></script>
 
 
 	@yield('js')
