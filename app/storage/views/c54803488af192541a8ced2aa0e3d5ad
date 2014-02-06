@@ -1,0 +1,105 @@
+
+<?php $__env->startSection('ht'); ?> 
+	
+	R# <?php echo $r->id; ?> - <?php echo $r->student->fullName(); ?> (<?php echo $r->student->studentID; ?>)
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('cnt'); ?>
+<div class="row">
+
+	<div class="col-md-6">
+		<div class="panel panel-primary">
+		  <div class="panel-heading"><b> Documents Requested </b></div>
+		
+
+		  <!-- Table -->
+		  <table class="table table-striped table-condensed table-bordered">
+
+		  		<thead>
+		  			
+		  			<tr>
+		  				<th>Document Type</th>
+		  				<th>Status</th>
+		  				<th>Action</th>
+		  			</tr>
+
+		  		</thead>
+
+		  		<tbody>
+		  			
+		  			<?php foreach($r->documents as $d): ?>
+
+		  				<tr class="<?php echo $d->rstatus(true); ?>">
+		  						
+		  					<td><?php echo $d->name; ?></td>
+		  					<td><?php echo $d->rstatus(); ?></td>
+		  					<td>
+		  					<center>
+
+		  					<?php if($d->pivot->status): ?>
+
+		  						<a href="<?php echo url('mark-undone/'.$r->id.'/'.$d->id	); ?>" class="tip" title="Mark as Pending"><i class="glyphicon glyphicon-remove"></i></a>
+		  					<?php else: ?>
+		  						 <a href="<?php echo url('mark-done/'.$r->id.'/'.$d->id); ?>" class="tip" title="Mark as Done"><i class="glyphicon glyphicon-check"></i></a>
+
+		  					<?php endif; ?>
+
+		  					</center>
+		  					</td>
+
+		  				</tr>
+
+		  			<?php endforeach; ?>
+
+		  		</tbody>
+
+		  </table>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="panel panel-warning">
+		  <div class="panel-heading"><b> Purpose of Request </b></div>
+		
+
+		  <!-- Table -->
+		  <table class="table table-striped table-condensed table-bordered">
+
+		  		
+
+		  		<tbody>
+		  			
+		  			<?php foreach($r->reasons as $p): ?>
+
+		  				<tr>
+		  						
+		  					<td><?php echo $p->name; ?></td>
+
+		  				</tr>
+
+		  			<?php endforeach; ?>
+
+		  		</tbody>
+
+		  </table>
+		</div>
+	</div>
+
+	
+
+</div>
+
+
+<div class="row">
+	
+	<div class="col-md-3 col-md-offset-9">
+		
+		<a href="<?php echo url('mark-cleared/'.$r->id); ?>" class="btn btn-primary btn-block">Mark as Cleared</a>
+
+	</div>
+
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

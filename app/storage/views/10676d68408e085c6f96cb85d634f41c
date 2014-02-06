@@ -1,0 +1,120 @@
+
+
+<?php $__env->startSection('js'); ?>
+	
+	<script type="text/javascript">
+	// Code used to add Todo Tasks
+	var number_of_requirements = <?php echo count($r->document->requirements); ?>;
+
+	jQuery(document).ready(function($)
+	{
+		var $todo_tasks = $("#todo_tasks");
+
+		replaceCheckboxes();
+
+		checkIfReady();
+
+		$('.todo_list').click(function(){
+			var ref_id = $(this).data('id');
+			var status = this.checked;
+			var type = 'r';
+			var document_request_id = <?php echo $r->id; ?>;
+
+			checkIfReady();
+
+			$.post('<?php echo url('task/done'); ?>', {ref_id:ref_id, status:status, type:type, document_request_id: document_request_id});
+		});
+
+	
+	});
+
+
+	function checkIfReady () {
+		var checked = $(".todo_list:checked").length;
+		$(".task-done").html(checked);
+		if(checked == number_of_requirements)
+			$(".btn-proceed").removeClass('disabled');
+		else
+			$(".btn-proceed").addClass('disabled');
+
+	}
+</script>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('c'); ?>
+	<div class="row">
+	<div class="col-sm-12">
+		<div class="well">
+			<h1> <i class="<?php echo $r->level->icon; ?>"></i> <?php echo $r->document->name; ?></h1>
+			<h3><strong>Requested By:</strong> <?php echo $r->request->student->fullName();; ?></h3>
+		</div>
+	</div>
+</div>	
+
+
+<div class="row">
+	
+	<div class="col-sm-9">
+		<div class="tile-block" id="todo_tasks">
+			
+			<div class="tile-header">
+				<i class="entypo-list"></i>
+				
+				<a href="#">
+					Requirements
+					<span>check list, tick one.</span>
+				</a>
+			</div>
+			
+			<div class="tile-content">
+				
+				<!-- <input type="text" class="form-control" placeholder="Add Task"> -->
+				
+				
+				<ul class="todo-list">
+					
+					<?php foreach($r->document->requirements as $req): ?>
+					<li> <div class="checkbox checkbox-replace color-white"><input type="checkbox" class="todo_list" data-id="<?php echo $req->id; ?>" <?php echo $r->isTaskDone($req->id) ? 'checked' : ''; ?> /><label><?php echo $req->name; ?></label></div></li>
+					<?php endforeach; ?>
+
+				</ul>
+				
+			</div>
+			
+			<div class="tile-footer" style="text-align:right;">
+				<a href="<?php echo url('manage/proceed/'.$r->id); ?>" class="btn btn-success btn-proceed disabled ">Proceed To Next 
+								<i class="entypo-right-open"></i>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="col-sm-3">
+			
+		<div class="row">
+			
+			<div class="col-sm-12">
+	
+		<div class="tile-stats tile-red">
+			<div class="icon"><i class="entypo-check"></i></div>
+			<div class="num task-done" data-start="0" data-end="<?php echo count($r->taskDone); ?>" data-postfix="" data-duration="1500" data-delay="0">0</div>
+			
+			<h3>Task Done</h3>
+			<p>out of <?php echo count($r->document->requirements); ?></p>
+		</div>
+		
+	</div>
+
+		</div>
+
+
+	</div>
+		
+	</div>
+
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('neon', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

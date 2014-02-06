@@ -1,0 +1,9 @@
+
+<?php $__env->startSection('c'); ?>
+	
+	<h2> <i class="<?php echo $l->icon; ?>"></i> <?php echo $l->name; ?></h2>
+
+	<?php echo $__env->make('manage/requesttable', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('neon', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
